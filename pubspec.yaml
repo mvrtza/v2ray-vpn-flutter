@@ -41,6 +41,8 @@ dependencies:
   flutter_cube: ^0.1.1
   flutter_secure_storage: ^9.2.4
   glassmorphism: ^3.0.0
+  equatable: ^2.0.7
+  collection: ^1.17.2
 
 dev_dependencies:
   flutter_test:

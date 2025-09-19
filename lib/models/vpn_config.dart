@@ -8,6 +8,11 @@ class VpnConfig {
   final String configString;
   final ConfigStatus connection;
 
+  final String? city;
+  final String? region;
+  final double? lat;
+  final double? lon;
+
   VpnConfig({
     required this.id,
     required this.date,
@@ -15,7 +20,12 @@ class VpnConfig {
     required this.selected,
     required this.configString,
     this.connection = ConfigStatus.unknown,
+    this.city,
+    this.region,
+    this.lat,
+    this.lon,
   });
+
   factory VpnConfig.fromJson(Map<String, dynamic> json) => VpnConfig(
     id: json['id'],
     date: DateTime.parse(json['date']),
@@ -26,6 +36,10 @@ class VpnConfig {
           (e) => e.toString() == 'ConfigStatus.${json['connection']}',
       orElse: () => ConfigStatus.unknown,
     ),
+    city: json['city'],
+    region: json['region'],
+    lat: (json['lat'] != null) ? (json['lat'] as num).toDouble() : null,
+    lon: (json['lon'] != null) ? (json['lon'] as num).toDouble() : null,
   );
 
   Map<String, dynamic> toJson() => {
@@ -35,5 +49,9 @@ class VpnConfig {
     'selected': selected,
     'configString': configString,
     'connection': connection.toString().split('.').last,
+    'city': city,
+    'region': region,
+    'lat': lat,
+    'lon': lon,
   };
 }

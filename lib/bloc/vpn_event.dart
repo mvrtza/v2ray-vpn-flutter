@@ -7,9 +7,9 @@ abstract class VpnEvent extends Equatable {
   List<Object?> get props => [];
 }
 
-class ListAll extends VpnEvent {
-
-}
+class ListAll extends VpnEvent {}
+class TestAll extends VpnEvent {}
+class LocationAll extends VpnEvent {}
 class SetSelected extends VpnEvent {
   final String id;
   SetSelected(this.id);
@@ -32,9 +32,7 @@ class AddConfig extends VpnEvent {
   List<Object?> get props => [title,configString];
 
 }
-class GetConnectionStatus extends VpnEvent {
+class GetConnectionStatus extends VpnEvent {}
 
-}
-class ToggleVpn extends VpnEvent {
-
-}
+class ToggleVpn extends VpnEvent {}
+class Connected extends VpnEvent {}

@@ -110,14 +110,14 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "9.1.1"
-  flutter_cube:
-    dependency: "direct dev"
+  flutter_earth_globe:
+    dependency: "direct main"
     description:
-      name: flutter_cube
-      sha256: "71cf679a251166eb97f86751c56582b09abdbf859485fbf60524948813914c3b"
+      name: flutter_earth_globe
+      sha256: "12938e2b3857f1a8ee5c8811b1a1ef2715837bdfc87aac46bdca059c2fe34e6b"
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "0.1.1"
+    version: "1.0.5"
   flutter_lints:
     dependency: "direct dev"
     description:
@@ -179,6 +179,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_v2ray:
+    dependency: "direct main"
+    description:
+      name: flutter_v2ray
+      sha256: "09dce3b4b58ea6a4220409d948a4d92a6eb3416184e6512ec0f5773fd48e5ab0"
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "1.0.10"
   flutter_web_plugins:
     dependency: transitive
     description: flutter
@@ -200,6 +208,14 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "13.2.5"
+  http:
+    dependency: transitive
+    description:
+      name: http
+      sha256: bb2ce4590bc2667c96f318d68cac1b5a7987ec819351d32b1c987239a815e007
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "1.5.0"
   http_parser:
     dependency: transitive
     description:

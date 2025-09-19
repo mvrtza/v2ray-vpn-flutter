@@ -1,4 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- اجازه دسترسی به شبکه -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- اجازه استفاده از VPN -->
+
     <application
         android:label="vpn_v2ray_full"
         android:name="${applicationName}"

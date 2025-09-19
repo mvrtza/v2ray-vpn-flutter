@@ -30,4 +30,8 @@ class SecureVpnStorage extends VpnStorage{
     configs.removeWhere((c) => c.id == id);
     await storage.write(key: kVpnStorageKey, value: jsonEncode(configs));
   }
+  Future<void> saveAllConfigs(List<VpnConfig> configs) async {
+    final jsonList = configs.map((c) => c.toJson()).toList();
+    await storage.write(key: kVpnStorageKey, value: jsonEncode(jsonList));
+  }
 }

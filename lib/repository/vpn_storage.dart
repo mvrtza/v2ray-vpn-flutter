@@ -4,4 +4,5 @@ abstract class VpnStorage {
   Future<List<VpnConfig>> readConfigs();
   Future<void> saveConfig(VpnConfig config);
   Future<void> removeConfig(String id);
+  Future<void> saveAllConfigs(List<VpnConfig> id);
 }

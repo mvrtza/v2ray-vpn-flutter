@@ -11,4 +11,6 @@ class VpnRepository {
   Future<void> addConfig(VpnConfig config) => storage.saveConfig(config);
 
   Future<void> removeConfig(String id) => storage.removeConfig(id);
+  Future<void> saveAllConfigs(List<VpnConfig> configs) => storage.saveAllConfigs(configs);
+
 }
